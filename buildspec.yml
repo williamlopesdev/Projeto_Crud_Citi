@@ -1,0 +1,34 @@
+
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+      - mvn clean package -DskipTests=true
+  post_build:
+    commands:
+      - echo Build completed sucessfully
+artifacts:
+  files:
+    - target/CrudApiItExperts.jar
+#  discard-paths: yes
+
+
+
+# version: 0.2
+
+# phases:
+#   build:
+#     commands:
+#       - echo Entrando no build
+#       - mvn clean package
+#   post_build:
+#     commands:
+#       - echo Build finalizado com sucesso
+# artifacts:
+#   files:
+#     - target/CrudApiItExperts.jar
+#   discard-paths: yes
+
+
