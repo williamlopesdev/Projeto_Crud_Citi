@@ -11,7 +11,8 @@ phases:
       - echo Build completed sucessfully
 artifacts:
   files:
-    - target/CrudApiItExperts.jar
+    - '**/*'
+#    - target/CrudApiItExperts.jar
 #  discard-paths: yes
 
 
