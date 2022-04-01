@@ -53,13 +53,13 @@ public class ContaController {
 		
 	}
 	
-	@PutMapping("/{id}")
-	public ResponseEntity<Conta> update(@RequestBody Conta conta, @PathVariable Long id){
-		conta = contaService.update(conta, id);
-		
-		//return ResponseEntity.noContent().build();
-		return ResponseEntity.ok().body(conta);
-	}
+//	@PutMapping("/{id}")
+//	public ResponseEntity<Conta> update(@RequestBody Conta conta, @PathVariable Long id){
+//		conta = contaService.update(conta, id);
+//		
+//		//return ResponseEntity.noContent().build();
+//		return ResponseEntity.ok().body(conta);
+//	}
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Conta> delete(@PathVariable Long id){
